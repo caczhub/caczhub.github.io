@@ -1,27 +1,15 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 /*Color*/
-:root {
-  --border-bar: #494949;
+:root{
+  --border-bar: #494949;  
   --baseBgr: #fff5d7;
-  --popBgr: #ffb01d;
+  --popBgr:#ffb01d;
   --textCol: #000000;
-  --headerCol: #494949;
+  --headerCol:#494949;
 }
 
 /*Navbar*/
 .navContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   background-color: #64d9fa;
   position: -webkit-sticky;
@@ -29,8 +17,6 @@
   top: 0;
 }
 .navContainer a {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 0px;
   flex: 1 1 0;
   color: var(--headerCol);
   background-color: var(--baseBgr);
@@ -38,28 +24,23 @@
   border: solid 0.5em var(--popBgr);
   text-decoration: none;
 }
-.navContainer h2 {
+.navContainer h2{
   margin: 0;
-  color: inherit;
+  color:inherit;
 }
 
-@media only screen and (min-width: 600px) {
-  .navContainer {
+@media only screen and (min-width: 600px){
+  .navContainer{
     display: none;
   }
-  .videoItem p {
+  .videoItem p{
     padding-left: 2em;
   }
 }
 
 /*Content Flexbox-types*/
 .contentWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   height: 100%;
   background-color: var(--baseBgr);
@@ -68,37 +49,23 @@
 }
 
 .contentContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 0px;
   flex: 1 1 0;
-
+  
   margin: 0 1rem;
 }
 .contentContainer h1 {
-  background-color: var(--popBgr);
+  background-color:var(--popBgr);
   color: var(--headerCol);
   padding: 1rem 0;
   padding-left: 0.5em;
-  margin: 0;
+  margin: 0
 }
 
 .contentItem {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   padding: 1em;
   border: 0.5em solid var(--border-bar);
@@ -138,6 +105,7 @@
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
   border-width: 0em 0.5em 0.5em 0.5em;
   border-color: transparent transparent var(--border-bar) transparent;
+ 
 }
 
 ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
@@ -155,48 +123,33 @@
 /*Mobile Responsiveness*/
 @media only screen and (max-width: 600px) {
   .contentWrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column;
     flex-flow: column;
     scroll-behavior: smooth;
     overflow-y: scroll;
     padding: 0 0.25rem;
   }
   .contentItem {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   .contentContainer h1 {
-    position: -webkit-sticky;
     position: sticky;
     top: 0.25em;
   }
-
-  .headShot {
-    max-width: 70%;
-  }
+  
+.headShot {
+  max-width: 70%;
+ }
 }
 
 /*Flexbox helpers*/
 .flex1 {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 0px;
   flex: 1 1 0;
 }
 .flex2 {
-  -webkit-box-flex: 2;
-  -ms-flex: 2 1 0px;
   flex: 2 1 0;
 }
 .flex3 {
-  -webkit-box-flex: 3;
-  -ms-flex: 3 1 0px;
   flex: 3 1 0;
 }
 
@@ -205,6 +158,7 @@ video {
   /* override other styles to make responsive */
   width: 100% !important;
   height: auto !important;
+  
 }
 
 img {
@@ -212,26 +166,25 @@ img {
   border: 0.5em solid var(--border-bar);
 }
 
-h1 {
+h1{
   border-bottom: 0.5rem solid var(--border-bar);
 }
-a:focus,
-a:hover {
+a:focus, a:hover
+ {
   background-color: var(--popBgr);
   color: var(--headerCol);
   border: solid 0.5em var(--border-bar);
-  -webkit-text-decoration: underline var(--border-bar) 0.25em;
   text-decoration: underline var(--border-bar) 0.25em;
 }
 /*DarkMode*/
-@media (prefers-color-scheme: dark) {
-  :root {
-    --border-bar: #fff5d7;
-    --baseBgr: #494949;
-    --popBgr: #ffb01d;
+@media (prefers-color-scheme: dark){
+  :root{
+    --border-bar : #fff5d7;  
+    --baseBgr:#494949;
+    --popBgr:#ffb01d;
     --textCol: #ffffff;
   }
-  .navContainer a {
+  .navContainer a{
     color: var(--border-bar);
   }
 }
