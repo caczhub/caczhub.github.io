@@ -23,10 +23,13 @@
   -webkit-box-direction: normal;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
-  background-color: #64d9fa;
+  background-color: var(--baseBgr);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  /* the following makes it look good on actual mobile, not desktop emulation */
+  padding-bottom: 4rem;
+
 }
 .navContainer a {
   -webkit-box-flex: 1;
@@ -79,7 +82,7 @@
   -ms-flex: 1 1 0px;
   flex: 1 1 0;
 
-  margin: 0 1rem;
+  margin: 0rem 1rem -1rem 1rem;
 }
 .contentContainer h1 {
   background-color: var(--popBgr);
@@ -175,7 +178,7 @@
   .contentContainer h1 {
     position: -webkit-sticky;
     position: sticky;
-    top: 0.25em;
+    top: 0;
   }
 
   .headShot {
