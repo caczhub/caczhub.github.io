@@ -26,7 +26,6 @@
   background-color: var(--baseBgr);
   position: -webkit-static;
   position: static;
-  padding-top: 3.5rem;
   padding-bottom: 0.5rem;
 }
 .navContainer a {
@@ -189,6 +188,12 @@
 
   .headShot {
     max-width: 70%;
+  }
+
+  .scrollIntermediate{
+    /* Makes the last project div not have it's border outside the screen, at least on android chrome */
+    padding-bottom: 4rem;
+    margin-bottom: -4rem;
   }
 }
 
