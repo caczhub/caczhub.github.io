@@ -3,16 +3,10 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="navContainer" id="navBar">
-        <a href="#about" className="navItem">
-          <h2>About</h2>
-        </a>
-        <a href="#projects" className="navItem">
-          <h2>Projects</h2>
-        </a>
-      </div>
+      
       <div className="contentWrapper" id="contentWrap">
         <div id="about" className="contentContainer flex1">
+          
           <h1>About</h1>
           <div className="scrollIntermediate">
             <div className="contentItem">
@@ -97,6 +91,14 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="navContainer" id="navBar">
+        <a href="#about" className="navItem">
+          <h2>About</h2>
+        </a>
+        <a href="#projects" className="navItem">
+          <h2>Projects</h2>
+        </a>
       </div>
     </>
   );
