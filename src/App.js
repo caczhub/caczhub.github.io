@@ -16,7 +16,9 @@ function App() {
           <h1>About</h1>
           <div className="scrollIntermediate">
             <div className="contentItem">
-              <img className="headShot" src="WFhs2.png" alt="This is me" />
+              <div id="Image" className="headShot">
+              <img src="WFhs2.png" alt="This is me" />
+              </div>
               <div>
                 <h2>Carl Zettergren</h2>
                 <p>

@@ -205,10 +205,7 @@
     margin: 0.5rem 0;
   }
 
-  .headShot {
-    max-width: 70%;
-    max-height: 70%;
-  }
+  
 
   .scrollIntermediate{
     /* Makes the last project div not have it's border outside the screen, at least on android chrome */
@@ -224,7 +221,9 @@
 }
 
 
-
+.headShot {
+  margin: 0 1rem;
+}
 /*Media element styling*/
 video {
   /* override other styles to make responsive */
@@ -234,7 +233,8 @@ video {
 
 img {
   max-width: 100%;
-  max-height: 100%;
+  /* the margin fixes an offcenter issue */
+  margin-left: -0.5rem; 
   border: 0.5em solid var(--border-bar);
 }
 
