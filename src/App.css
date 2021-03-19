@@ -265,6 +265,7 @@ h1 {
 #projects h2{
   padding:0.5rem 0;
   margin-bottom: -0.5rem;
+  margin-top: 0;
   display: flex;
   justify-content: center;
   background-color: var(--border-bar);
