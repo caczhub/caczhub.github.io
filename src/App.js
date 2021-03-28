@@ -17,7 +17,7 @@ function App() {
           <div className="scrollIntermediate">
             <div className="contentItem">
               <div id="Image" className="headShot">
-                <img src="WFhs2.png" alt="This is me" />
+                <img src="media/WFhs2.png" alt="This is me" />
               </div>
               <div>
                 <h2>Carl Zettergren</h2>
@@ -49,24 +49,31 @@ function App() {
             <Project
               projectTitle={"StellAR"}
               projectDesc={
-                "StellAR is about creating your own stellar system which you can view in AR.This includes creating and customizing your own planets and to set them out in the star system on unique orbits. In the customization the user can choose between making a solid or a gas planet. The user can then change the look and size of the planets. In the stellar system part the user gets to try to set a stable orbit for a planet. But there is also the option of just goofing around and making planets crash into each other. It's possible to save multiple star systems and also to change the gravity settings for different orbit speeds."
+                "StellAR is about creating your own stellar system which you can view in AR.This includes creating and customizing your own planets and to set them out in the star system on unique orbits. It's possible to save multiple star systems and also to change the gravity settings for different orbit speeds."
               }
-              mediaSrc={"/DemoReel.mp4"}
+              projectCont={"My role in this project was general AR-Scene management and implementation in Unity3d using ARFoundation, data-gathering about exoplanets and stellar systems, development of a customizable and multi-instantiatable procedural material for gas planets using Shadergraph and development of a UI for gas planet customization"}
+              mediaSrc={"media/DemoReel.mp4"}
               externalSite={"https://stellar-devs.github.io/website"}
             />
             <Project
               projectTitle={"SynthesEyeser"}
               projectDesc={
-                "The SynthesEyeser is an exploration in multimodal interactions. The gaze and gesture based instrument uses a Tobii eye-tracker to understand where on the custom-built UI the player is looking, changing the pitch and amount of effect applied to the sound. The volume is controlled through gestures in front of a proximity sensor. All of which is controlled via a Bela micro-controller."
+                "In this project we explored multimodal interfaces. We examined whether gaze is a viable modality for multimodal musical production and if musical experience has an impact on learning instruments that use novel interaction modalities. An instrument prototype dubbed the “SynthesEyeser” was developed with consideration to previous research of gaze interfaces and gaze in music. A low-latency micro-controller, Bela, powers the instrument and utilizes a Tobii eye-tracker for gaze control as well as an ultrasonic sensor for gesture control. The instrument was evaluated in an experimental test setting through participants’ self assessment and qualitative experience."
               }
-              mediaSrc={"/Syntheseyeser_final.mp4"}
+              projectCont={
+                "During this project I co-developed the user interface with p5.js, I wired parts of the electronics and I co-designed and ran the qualitative tests."
+              }
+              mediaSrc={"media/Syntheseyeser_final.mp4"}
             />
             <Project
               projectTitle={"Brushi"}
               projectDesc={
-                "An interaction design project on the theme 'Media@Home'. A common household rutine involves brushing your teeth, we wanted to create a design that incentivises dental care for young children. My role in this project revolved around producing physical prototypes by modeling in Autodesk Fusion 360 and 3d-printing via Cura on an Ultimaker s5 and an Ultimaker s3 extended."
+                "An interaction design project on the theme 'Media@Home'. A common household rutine involves brushing your teeth, we wanted to create a design that incentivises dental care for young children."
               }
-              mediaSrc={"/Brushi_presentation.mp4"}
+              projectCont={
+                "My role in this project revolved around producing physical prototypes by modeling in Autodesk Fusion 360 and 3d-printing via Cura on an Ultimaker s5 and an Ultimaker s3 extended."
+              }
+              mediaSrc={"media/Brushi_presentation.mp4"}
             />
           </div>
         </div>

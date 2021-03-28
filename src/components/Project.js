@@ -27,6 +27,8 @@ function Project(props) {
       <div className="projectText flex2">
         
         <p>{props.projectDesc}</p>
+        <hr/>
+        <p>{props.projectCont}</p>
         {websiteCheck(props.externalSite, props.projectTitle)}
       </div>
     </div>
@@ -70,7 +72,7 @@ function websiteCheck(link, title) {
   if (link) {
     return (
       <div className="linkHelper">
-        <a href={link}>{title + " website. Opens in same window"}</a>
+        <a href={link}>{title + " website. Opens in the same window."}</a>
       </div>
     );
   }
