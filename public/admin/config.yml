@@ -6,6 +6,8 @@ media_folder: "public/media" # Media files will be stored in the repo under stat
 public_folder: "/media" # The src attribute for uploaded media will begin with /images/uploads
 collections:
   - name: "post" # Used in routes, e.g., /admin/collections/blog
+    extension: "json"
+    format: "json"
     label: "Posts" # Used in the UI
     folder: "posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
