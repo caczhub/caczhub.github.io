@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: caczhub/caczhub.github.io
-  branch: master # Branch to update (optional; defaults to master)
+  branch: gh-pages # Branch to update (optional; defaults to master)
   site_domain: hopeful-montalcini-991417.netlify.com
 
 # These lines should *not* be indented
