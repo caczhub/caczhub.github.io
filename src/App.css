@@ -182,6 +182,11 @@ h1, h2, h5
 }
 .mediaItem .projectText {
   padding-left: 2em;
+
+
+}
+.pdfEmbed{
+  height: 30rem;
 }
 /*Smaller screen Responsiveness*/
 @media only screen and (max-width: 1400px){
@@ -196,6 +201,12 @@ h1, h2, h5
   }
   .mediaItem .projectText {
     padding-left: initial;
+  }
+  .pdfEmbed{
+    height: 20rem;
+  }
+  .flex3 {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -237,8 +248,11 @@ h1, h2, h5
     flex: 3 1 auto;
   }
   #projects h2{
-  padding-left: 0;
+  padding: 0 1rem;
   justify-content: center;
+  }
+  .pdfEmbed{
+    height: 10rem;
   }
 }
 
@@ -258,6 +272,8 @@ img {
   margin-left: -0.5rem;
   border: 0.5em solid var(--border-bar);
 }
+
+
 
 .iframewrapper {
   width: 100%;

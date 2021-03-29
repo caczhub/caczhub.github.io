@@ -29,6 +29,7 @@ function Project(props) {
         <p>{props.projectDesc}</p>
         <hr/>
         <p>{props.projectCont}</p>
+        {pdfCheck(props.projectArticle)}
         {websiteCheck(props.externalSite, props.projectTitle)}
       </div>
     </div>
@@ -52,20 +53,19 @@ function FileCheck(fileSrc, types) {
       </video>
     );
   }
-  /*    
-  else if (
-       fileSrc.includes("youtu.be") ||
-       fileSrc.includes("youtube.com") ||
-       fileSrc.includes("vimeo.com")
-     ) {
-       return (
-         <div className="iframewrapper">
-           <iframe source src={fileSrc} title="external video" />
-         </div>
-       );
-     }
-  */
   else return <h1>Filetype not supported</h1>;
+}
+function pdfCheck(link){
+  if (link){
+    return (
+      <div className="linkHelper">
+       <a href={link}>PDF article. Opens in the same window.</a>
+      </div>
+      
+       
+    );
+  }
+
 }
 
 function websiteCheck(link, title) {
