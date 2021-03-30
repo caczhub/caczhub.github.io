@@ -109,6 +109,10 @@ h1, h2, h5
   border-top: 0em;
   color: var(--textCol);
 }
+.mediaItem{
+  scroll-snap-align:start;
+  scroll-margin-top: 3rem;
+}
 
 #projects h2{
   padding:0.5rem 0;
@@ -122,6 +126,7 @@ h1, h2, h5
 /*Scrollbar Styling*/
 .scrollIntermediate {
   overflow-y: auto;
+  scroll-snap-type: y proximity;
   padding-bottom: 1em;
   scrollbar-width: auto;
   scrollbar-color: var(--border-bar) var(--popBgr);
@@ -140,7 +145,7 @@ h1, h2, h5
   background-color: var(--baseBgr);
   border: 0.25em solid var(--popBgr);
 }
-::-webkit-scrollbar-button:single-button {
+.scrollIntermediate::-webkit-scrollbar-button:single-button {
   background-color: var(--popBgr);
   display: block;
   border-style: solid;
@@ -148,20 +153,20 @@ h1, h2, h5
   width: 0.5em;
 }
 /* Up */
-::-webkit-scrollbar-button:single-button:vertical:decrement {
+.scrollIntermediate::-webkit-scrollbar-button:single-button:vertical:decrement {
   border-width: 0em 0.5em 0.5em 0.5em;
   border-color: transparent transparent var(--border-bar) transparent;
 }
 
-::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+.scrollIntermediate::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
   border-color: transparent transparent var(--baseBgr) transparent;
 }
 /* Down */
-::-webkit-scrollbar-button:single-button:vertical:increment {
+.scrollIntermediate::-webkit-scrollbar-button:single-button:vertical:increment {
   border-width: 0.5em 0.5em 0 0.5em;
   border-color: var(--border-bar) transparent transparent transparent;
 }
-::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+.scrollIntermediate::-webkit-scrollbar-button:vertical:single-button:increment:hover {
   border-color: var(--baseBgr) transparent transparent transparent;
 }
 /*Flexbox helpers*/
@@ -180,6 +185,8 @@ h1, h2, h5
   -ms-flex: 3 1 0px;
   flex: 3 1 0;
 }
+
+
 .mediaItem .projectText {
   padding-left: 2em;
 
@@ -202,12 +209,7 @@ h1, h2, h5
   .mediaItem .projectText {
     padding-left: initial;
   }
-  .pdfEmbed{
-    height: 20rem;
-  }
-  .flex3 {
-    width: 100%;
-  }
+  
 }
 @media only screen and (max-width: 900px) {
   .contentWrapper {
@@ -240,6 +242,7 @@ h1, h2, h5
     /* Makes the last project div not have it's border outside the screen, at least on android chrome */
     padding-bottom: 4rem;
     margin-bottom: -4rem;
+    
   }
   .flex1 {
     flex: 1 1 auto;

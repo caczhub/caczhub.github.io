@@ -23,7 +23,10 @@ function Project(props) {
     <h2>{props.projectTitle}</h2>
     <div id={props.projectTitle} className="contentItem mediaItem">
       
-      <div className="flex3">{mediaElement}</div>
+      <div className="flex3">
+        {mediaElement}
+       
+      </div>
       <div className="projectText flex2">
         
         <p>{props.projectDesc}</p>
