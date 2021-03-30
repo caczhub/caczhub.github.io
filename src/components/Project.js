@@ -16,7 +16,7 @@ function Project(props) {
     "svg",
     "webp",
   ];
-  const mediaElement = FileCheck(props.mediaSrc, fileTypes);
+  const mediaElement = FileCheck(props.mediaSrc, props.mediaPoster, fileTypes);
 
   return (
     <div>
@@ -40,7 +40,7 @@ function Project(props) {
   );
 }
 
-function FileCheck(fileSrc, types) {
+function FileCheck(fileSrc, poster, types) {
   if (types.allowedImgTypes.indexOf(fileSrc.split(".").pop()) > -1) {
     return (
       <img
@@ -50,8 +50,8 @@ function FileCheck(fileSrc, types) {
     );
   } else if (types.allowedVideoTypes.indexOf(fileSrc.split(".").pop()) > -1) {
     return (
-      <video controls>
-        <source src={fileSrc} type={"video/" + fileSrc.split(".").pop()} />
+      <video controls poster={poster}>
+        <source src={fileSrc} type={"video/" + fileSrc.split(".").pop()}  />
         Your browser does not support the video tag.
       </video>
     );

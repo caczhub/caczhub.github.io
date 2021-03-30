@@ -55,6 +55,7 @@ function App() {
                 "My role in this project was general AR-Scene management and implementation in Unity3d using ARFoundation, data-gathering about exoplanets and stellar systems, development of a customizable and multi-instantiatable procedural material for gas planets using Shadergraph and development of a UI for gas planet customization"
               }
               mediaSrc={"media/DemoReel.mp4"}
+              mediaPoster={"media/StellarPoster.png"}
               externalSite={"https://stellar-devs.github.io/website"}
             />
             <Project
@@ -83,6 +84,7 @@ function App() {
               projectCont={
                 "My role in this project revolved around producing physical prototypes by modeling in Autodesk Fusion 360 and 3d-printing via Cura on an Ultimaker s5 and an Ultimaker s3 extended."
               }
+              mediaPoster={"media/BruhsiPoster.png"}
               mediaSrc={"media/Brushi_presentation.mp4"}
             />
             <Project
