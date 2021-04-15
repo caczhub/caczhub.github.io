@@ -59,10 +59,13 @@ function App() {
               externalSite={"https://stellar-devs.github.io/website"}
             />
             <Project
-            projectTitle={"Extending the Akkaplatta Movement Experience"}
-              projectDesc={"This was a project where I used the principles of somaesthetic design and first person design to design sensory experiences for the 'Centrum för sinnesstimulering' in Stockholm. The design revolved around enhancing the experience of riding the Akkaplatta, a device built to give a sense of autonomy to the user"}
-              
-              projectCont={"This was a solo project so I did everything. This project was conducted during spring 2020 and due to the ongoing pandemic it became a challenge in designing for users that are unable to meet you directly. I believe that somaesthetic principles has potential but as they exist currently they are not the best for designing for severe disability, as they makes assumptions about lived sensory experiences."}
+              projectTitle={"Extending the Akkaplatta Movement Experience"}
+              projectDesc={
+                "This was a project where I used the principles of somaesthetic design and first person design to design sensory experiences for the 'Centrum för sinnesstimulering' in Stockholm. The design revolved around enhancing the experience of riding the Akkaplatta, a device built to give a sense of autonomy to the user"
+              }
+              projectCont={
+                "This was a solo project so I did everything. This project was conducted during spring 2020 and due to the ongoing pandemic it became a challenge in designing for users that are unable to meet you directly. I believe that somaesthetic principles has potential but as they exist currently they are not the best for designing for severe disability, as they makes assumptions about lived sensory experiences."
+              }
               projectArticle={"media/PictorialFinal.pdf"}
               mediaSrc={"media/designcarlzettergren.mp4"}
             />
@@ -108,7 +111,6 @@ function App() {
               projectCont={
                 "This project made me learn web-development the hard way. During this project I mostly handled the vue-related backend development and the integration of the DND API. I think we learned a lot about the dangers of feature creep and the importance of a good API. Today I think we would have focused more on the UX which was rudimentary at best, but we just wanted to have as many working functions as possible."
               }
-              
               mediaSrc={"media/DNDspellbook.mp4"}
               externalSite={"https://inprogdndproject.netlify.app/#/"}
             />
